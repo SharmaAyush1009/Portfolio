@@ -4,6 +4,11 @@ const dotenv = require('dotenv');
 const emailjs = require('@emailjs/nodejs');
 
 dotenv.config();
+
+// Initialize EmailJS with your keys
+emailjs.init({
+    publicKey: process.env.EMAILJS_PUBLIC_KEY
+});
 const app = express();
 app.use(express.json());
 app.use(cors({
