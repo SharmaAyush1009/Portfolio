@@ -7,32 +7,47 @@ dotenv.config();
 
 // Initialize EmailJS with your keys
 emailjs.init({
-    publicKey: process.env.EMAILJS_PUBLIC_KEY
+    publicKey: process.env.EMAILJS_PUBLIC_KEY,
+    privateKey: process.env.EMAILJS_PRIVATE_KEY, // You need to add this to your environment variables
 });
+
 const app = express();
 app.use(express.json());
 app.use(cors({
     origin: 'https://portfolio-sharmaayush1009s-projects.vercel.app'
 }));
 
-app.post('/api/send-email', (req, res) => {
-    const { name, email, subject, message } = req.body;
+app.post('/api/send-email', async (req, res) => {
+    try {
+        const { name, email, subject, message } = req.body;
+        
+        console.log('Received request:', { name, email, subject });
+        console.log('Environment check:', {
+            serviceId: !!process.env.SERVICE_ID,
+            tempId: !!process.env.TEMP_ID,
+            publicKey: !!process.env.EMAILJS_PUBLIC_KEY,
+            privateKey: !!process.env.EMAILJS_PRIVATE_KEY
+        });
 
-    emailjs.send(
-        process.env.SERVICE_ID,
-        process.env.TEMP_ID,
-        {
-            from_name: name,
-            reply_to: email,
-            subject: subject,
-            message: message
-        },
-        process.env.EMAILJS_PUBLIC_KEY
-    ).then(result => {
-        res.status(200).send({ success: true });
-    }).catch(error => {
-        res.status(500).send({ success: false, error });
-    });
+        const result = await emailjs.send(
+            process.env.SERVICE_ID,
+            process.env.TEMP_ID,
+            {
+                from_name: name,
+                reply_to: email,
+                subject: subject,
+                message: message
+            }
+        );
+        
+        console.log('Email sent successfully:', result);
+        res.status(200).json({ success: true });
+        
+    } catch (error) {
+        console.error('Email sending failed:', error);
+        res.status(500).json({ success: false, error: error.message });
+    }
 });
 
-app.listen(5000, () => console.log("Server running on port 5000"));
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
