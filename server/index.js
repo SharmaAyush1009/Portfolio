@@ -14,7 +14,7 @@ emailjs.init({
 const app = express();
 app.use(express.json());
 app.use(cors({
-    origin: '*'
+    origin: 'https://portfolio-sharmaayush1009s-projects.vercel.app'
 }));
 
 app.post('/api/send-email', async (req, res) => {
