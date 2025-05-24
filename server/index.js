@@ -5,10 +5,10 @@ const emailjs = require('@emailjs/nodejs');
 
 dotenv.config();
 
-// Initialize EmailJS with your keys
+// Initialize EmailJS with keys
 emailjs.init({
     publicKey: process.env.EMAILJS_PUBLIC_KEY,
-    privateKey: process.env.EMAILJS_PRIVATE_KEY, // You need to add this to your environment variables
+    privateKey: process.env.EMAILJS_PRIVATE_KEY, 
 });
 
 const app = express();

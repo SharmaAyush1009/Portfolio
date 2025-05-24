@@ -2,7 +2,7 @@
 const themeToggle = document.getElementById('theme-toggle');
 const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
 
-// Set initial theme based on localStorage or system preference
+// Setting initial theme based on localStorage or system preference
 if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && prefersDarkScheme.matches)) {
     document.body.classList.add('dark');
 } else {
@@ -241,7 +241,7 @@ AOS.init({
     offset: 100
 });
 
-// Add method to easily add new skills, experiences, or projects
+// Add new skills, experiences, or projects
 function addSkill(category, skillName) {
     if (skills[category]) {
         skills[category].push(skillName);
