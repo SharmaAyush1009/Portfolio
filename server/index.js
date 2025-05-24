@@ -5,10 +5,10 @@ const emailjs = require('@emailjs/nodejs');
 
 dotenv.config();
 const app = express();
+app.use(express.json());
 app.use(cors({
     origin: 'https://portfolio-sharmaayush1009s-projects.vercel.app'
 }));
-app.use(express.json());
 
 app.post('/api/send-email', (req, res) => {
     const { name, email, subject, message } = req.body;
