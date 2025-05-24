@@ -198,7 +198,7 @@ if (contactForm) {
         const subject = document.getElementById('subject').value;
         const message = document.getElementById('message').value;
         
-        fetch('/api/send-email', {
+        fetch('https://portfolio-5k16.onrender.com/api/send-email', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ name, email, subject, message })
