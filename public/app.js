@@ -65,8 +65,8 @@ new Typed('#typewriter', {
 
 // Skills Data
 const skills = {
-    frontend: ['HTML5', 'CSS', 'JavaScript', 'React.js', 'Tailwind CSS'],
-    backend: ['Node.js', 'Express.js', 'Python', 'Django', 'MongoDB'],
+    frontend: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Tailwind CSS'],
+    backend: ['Node.js', 'Express', 'Python', 'Django', 'MongoDB', 'REST APIs'],
     tools: ['Git', 'GitHub', 'VS Code', 'Postman']
 };
 
