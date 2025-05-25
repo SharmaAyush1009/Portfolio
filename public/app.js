@@ -155,7 +155,7 @@ const projects = [
     },
     {
         title: "Secure Interview System(in Progress)",
-        description: "Designed a secure, cross-platform desktop application to conduct coding interviews with built-in anti-cheating mechanisms.  \"NOTE\" : Currently live not available ",
+        description: "Designed a secure, cross-platform desktop application to conduct coding interviews with built-in anti-cheating mechanisms.  --->\"NOTE\" : Currently live not available ",
         tech: ["Node.js", "Electron", "OS API"],
         links: {
             github: "#",
