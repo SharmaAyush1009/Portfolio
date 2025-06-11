@@ -158,8 +158,8 @@ const projects = [
         description: "Designed a secure desktop application to conduct coding interviews with built-in anti-cheating mechanisms.  --->\"NOTE\" : Currently live not available ",
         tech: ["OS APIs", "C++"],
         links: {
-            github: "#",
-            demo: "#"
+            github: "",
+            demo: ""
         }
     }
 ];
