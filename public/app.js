@@ -57,7 +57,7 @@ window.addEventListener('scroll', () => {
 
 // Typewriter Effect
 new Typed('#typewriter', {
-    strings: ['Problem Solver', 'Full Stack Developer', 'Tech Enthusiast'],
+    strings: ['Problem Solver', 'Backend Developer'],
     typeSpeed: 50,
     backSpeed: 30,
     loop: true
@@ -66,7 +66,7 @@ new Typed('#typewriter', {
 // Skills Data
 const skills = {
     frontend: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Tailwind CSS'],
-    backend: ['Node.js', 'Express', 'Python', 'Django', 'MongoDB', 'REST APIs'],
+    backend: ['Node.js', 'Express', 'Python', 'Django', 'MongoDB', 'REST APIs', 'PostgreSql', 'Redis'],
     tools: ['Git', 'GitHub', 'VS Code', 'Postman']
 };
 
@@ -145,6 +145,17 @@ const projects = [
         }
     },
     {
+        title: "Task Queue System",
+        description:
+            "Backend system for asynchronous job processing with reliable execution, retries, and strict idempotency. Designed to handle background tasks such as email delivery and report generation using Redis-based queuing and PostgreSQL.",
+        tech: ["Node.js", "Express.js", "PostgreSQL", "Redis"],
+        links: {
+            github: "https://github.com/SharmaAyush1009/TaskQueue",
+            demo: "#"
+        }
+    },
+
+    {
         title: "Fraud Website Detector",
         description: "AI-powered website fraud detection system. Features include SSL validation, domain analysis, content scanning, contact verification, and real-time risk assessment powered by Gemini AI.",
         tech: ["Python", "Flask", "Google Gemini AI", "BeautifulSoup", "HTML/CSS/JS", "MongoDB"],
@@ -154,9 +165,20 @@ const projects = [
         }
     },
     {
-        title: "Secure Interview System(in Progress)",
-        description: "Designed a secure desktop application to conduct coding interviews with built-in anti-cheating mechanisms.  --->\"NOTE\" : Currently live not available ",
-        tech: ["OS APIs", "C++"],
+        title: "Secure Interview System (Research Prototype)",
+        description:
+            "Research-focused prototype exploring OS-level mechanisms for securing remote coding interviews, including process monitoring, restricted execution environments, and focus-loss detection.",
+        tech: ["C++", "Windows APIs"],
+        links: {
+            github: "#",
+            demo: "#"
+        }
+    },
+    {
+        title: "Cache Simulator",
+        description:
+            "Educational cache memory simulator implementing configurable cache parameters to analyze hit/miss behavior under different access patterns and replacement policies.",
+        tech: ["C++", "Computer Architecture", "Cache Design"],
         links: {
             github: "#",
             demo: "#"
