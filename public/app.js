@@ -66,7 +66,7 @@ new Typed('#typewriter', {
 // Skills Data
 const skills = {
     frontend: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Tailwind CSS'],
-    backend: ['Node.js', 'Express', 'Python', 'Django', 'MongoDB', 'REST APIs', 'PostgreSql', 'Redis'],
+    backend: ['Node.js', 'Express', 'Python', 'Django', 'MongoDB', 'REST APIs', 'PostgreSql', 'Redis', 'Bash'],
     tools: ['Git', 'GitHub', 'VS Code', 'Postman']
 };
 
@@ -98,10 +98,10 @@ function renderSkills() {
 // Experience Data
 const experiences = [
     {
-        title: "Project Intern under Prof. Rahul CS",
-        company: "IIT Goa",
-        date: "May 2025 - Present",
-        description: "Design and implementation of the database architecture using MongoDB, crafting efficient data models and schemas. Working on backend features."
+        title: "Software Intern",
+        company: "MindfulCDC",
+        date: "May 2025 - July 2025",
+        description: "Designed Backend and implementation of the database architecture using MongoDB, crafting efficient data models and schemas."
     },
     {
         title: "Goa Police Hackathon",
@@ -113,7 +113,7 @@ const experiences = [
         title: "Problem Solving",
         company: "Competitive Platforms",
         date: "Aug 2024 - Present",
-        description: "Leetcode Rating: 1700+"
+        description: "Leetcode Rating: 1800+"
     }
 ];
 
