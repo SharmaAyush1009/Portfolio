@@ -180,7 +180,7 @@ const projects = [
             "Educational cache memory simulator implementing configurable cache parameters to analyze hit/miss behavior under different access patterns and replacement policies.",
         tech: ["C++", "Computer Architecture", "Cache Design"],
         links: {
-            github: "#",
+            github: "https://github.com/SharmaAyush1009/Cache-simulator",
             demo: "#"
         }
     }
