@@ -113,7 +113,7 @@ const experiences = [
         title: "Problem Solving",
         company: "Competitive Platforms",
         date: "Aug 2024 - Present",
-        description: "Peak Leetcode Rating: 1850+(Knight)"
+        description: "Peak Leetcode Rating: 1900+(Knight Top 4%)"
     }
 ];
 
