@@ -99,7 +99,7 @@ function renderSkills() {
 const experiences = [
     {
         title: "Software Intern",
-        company: "MindfulCDC",
+        company: "Cogniway",
         date: "May 2025 - July 2025",
         description: "Designed Backend and implementation of the database architecture using MongoDB, crafting efficient data models and schemas."
     },
